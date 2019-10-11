@@ -15,10 +15,10 @@ def reader(csvfile):
             floatdata.append(cr)
     return floatdata
 
-floatdata=reader('file.csv')
+floatdata=reader('dataset.csv')
 
 #initialising Weights
-weights = [1.0 for i in range(len(floatdata[0]))]
+weights = [0.0 for i in range(len(floatdata[0]))]
 
 #train
 for i in range(Epochs):
