@@ -32,9 +32,7 @@ def test(floattest,weights):
             ye=1.0
         else:
             ye=-1.0
-        if ye!=instance[-1]:
-            r-=1
-        else:
+        if ye==instance[-1]:
             r+=1
     acc=(r/len(floattest))*100
     return acc
