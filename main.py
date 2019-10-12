@@ -1,4 +1,3 @@
-import sys
 import csv
 import perceptron
 import csvconv
