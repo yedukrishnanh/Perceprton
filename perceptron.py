@@ -2,10 +2,8 @@
 def train(floatdata,lr,Epochs):
     weights = [0.0 for i in range(len(floatdata[0]))]
     correct= False
-   ## while(correct==False):
     for i in range(Epochs):
         correct=True
-        print(weights[0])
         for instance in floatdata:
             ye=weights[0]
             for attribute in range(len(weights)-1):
