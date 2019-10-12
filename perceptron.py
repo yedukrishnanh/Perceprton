@@ -11,7 +11,6 @@ def train(floatdata,lr,Epochs):
             else:
                 ye=-1.0
             if ye!=instance[-1]:
-                correct=False
                 weights[0] += lr * (instance[-1] - ye)
                 for k in range(len(weights)-1):
                     weights[k+1] += instance[k] * lr * (instance[-1] - ye)
