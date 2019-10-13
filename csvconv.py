@@ -1,9 +1,12 @@
+import csv
+import random
 #convert csv to float list
 def tofloat(csvfile):
     floatdata=list()
     with open(csvfile) as f:
-        content = f.readlines()
-        for item in content:
-            row = [float(el) for el in item.split(',')]
+        dataset = f.readlines()
+        for instance in dataset:
+            row = [float(attribute) for attribute in instance.split(',')]
             floatdata.append(row)
+        random.shuffle(floatdata)
     return floatdata
