@@ -15,6 +15,7 @@ def train(floatdata,lr,Epochs):
                 for k in range(len(weights)-1):
                     weights[k+1] += instance[k] * lr * (instance[-1] - ye)
     return weights
+    
 #testing
 def test(floattest,weights):
     r=0
@@ -28,5 +29,4 @@ def test(floattest,weights):
             ye=-1.0
         if ye==instance[-1]:
             r+=1
-    acc=(r/len(floattest))*100
-    return acc
+    return r

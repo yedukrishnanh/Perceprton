@@ -8,5 +8,4 @@ def tofloat(csvfile):
         for instance in dataset:
             row = [float(attribute) for attribute in instance.split(',')]
             floatdata.append(row)
-        random.shuffle(floatdata)
     return floatdata
